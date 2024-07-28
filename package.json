@@ -19,5 +19,11 @@
   "homepage": "https://github.com/noahfdaoud/all-your-assets#readme",
   "devDependencies": {
     "electron": "^31.3.0"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "electron-is-dev": "^3.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

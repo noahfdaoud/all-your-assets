@@ -11,9 +11,60 @@
             http-equiv="X-Content-Security-Policy"
             content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
+    <title>Asset browser</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <i class="bx bxl-codepen"></i>
+            <span>Production Type</span>
+        </div>
+        <p id="btn">ABC</p>
+    </div>
+    <ul>
+        <li>
+            <a href=#>
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">3D/VFX</span>
+            </a>
+            <span class="tooltip">3D/VFX</span>
+        </li>
+        <li>
+            <a href=#>
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">3D/VFX</span>
+            </a>
+            <span class="tooltip">3D/VFX</span>
+        </li>
+        <li>
+            <a href=#>
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">3D/VFX</span>
+            </a>
+            <span class="tooltip">3D/VFX</span>
+        </li>
+        <li>
+            <a href=#>
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item">3D/VFX</span>
+            </a>
+            <span class="tooltip">3D/VFX</span>
+        </li>
+    </ul>
+</div>
 <h1>Welcome to the asset browser</h1>
+<p id="info"></p>
 </body>
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onClick = function () {
+        sidebar.classList.toggle('active');
+    }
+</script>
+<script src="./renderer.js"></script>
 </html>
