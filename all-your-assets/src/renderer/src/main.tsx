@@ -2,12 +2,12 @@ import './assets/main.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import Tile from './Tile'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById('root2') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <Tile />
+    <Tile />
     <Tile />
   </React.StrictMode>
 

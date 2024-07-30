@@ -123,6 +123,27 @@ code {
   color: var(--ev-button-alt-hover-text);
   background-color: var(--ev-button-alt-hover-bg);
 }
+.tile-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tile{
+  width:200px;
+  height: 300px;
+  background-color: #292727;
+  border-radius: 20px;
+  border: 1px solid var(--ev-c-gray-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile img{
+  max-width: 100%;
+  padding: 10px;
+}
 
 .versions {
   position: absolute;
